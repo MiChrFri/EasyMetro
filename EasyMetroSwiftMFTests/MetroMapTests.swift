@@ -18,13 +18,8 @@ class MetroMapTests: XCTestCase {
         for line in metro.lines {
             if line.name == MarsCityMetroLine.yellow.name {
                 if let intersection = (line.stations["Green Cross"]?.intersecting)?.first {
-                    XCTAssertEqual(intersection.index, 6)
-                }
-            }
-            
-            if line.name == MarsCityMetroLine.green.name {
-                if let intersection = (line.stations["Green Cross"]?.intersecting)?.first {
-                    XCTAssertEqual(intersection.index, 0)
+                    
+                    XCTAssertEqual(intersection.name, "Green Cross")
                 }
             }
             

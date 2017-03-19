@@ -12,12 +12,12 @@ import XCTest
 class StationNodeTests: XCTestCase {
     
     func testStationNodeCreation() {
-        let firstStation = StationNode(withName: "First", index: 42)
+        let firstStation = StationNode(withName: "First", line: "Red")
         
         XCTAssertNotNil(firstStation.name)
         XCTAssertNotEqual(firstStation.name, "")
         XCTAssertEqual(firstStation.name, "First")
-        XCTAssertEqual(firstStation.index, 42)
+        XCTAssertEqual(firstStation.line, "Red")
     }
 }
 

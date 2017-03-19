@@ -21,13 +21,16 @@ enum MarsCityMetroLine: String {
     
     var stations: [String] {
         switch self {
-        case .red: return ["Matrix Stand", "Keymakers Lane", "Oracle Lane", "Boxing avenue", "Cypher lane", "Smith lane", "Morpheus Lane", "Trinity lane", "Neo Lane"]
+        case .red: return ["Matrix Stand", "Keymakers Lane", "Oracle Lane", "Boxing Avenue", "Cypher Lane", "Smith Lane", "Morpheus Lane", "Trinity Lane", "Neo Lane"]
         case .green: return ["North Pole", "Sheldon Street", "Greenland", "City Centre", "Stadium House", "Green House", "Green Cross", "South Pole", "South Park"]
-        case .blue: return ["East end", "Foot stand", "Football stadium", "City Centre", "Peter Park", "Maximus", "Rocky Street", "Boxers Street", "Boxing avenue", "West End"]
-        case .yellow: return ["Green Cross", "Orange Street", "Silk Board", "Snake Park", "Morpheus lane", "Little Street", "Cricket Grounds"]
-        case .black: return ["East end", "Gotham street", "Batman street", "Jokers street", "Hawkins street", "Da Vinci lane", "South Park", "Newton bath tub", "Einstein lane", "Neo lane"]
+        case .blue: return ["East End", "Foot Stand", "Football Stadium", "City Centre", "Peter Park", "Maximus", "Rocky Street", "Boxers Street", "Boxing avenue", "West End"]
+        case .yellow: return ["Green Cross", "Orange Street", "Silk Board", "Snake Park", "Morpheus Lane", "Little Street", "Cricket Grounds"]
+        case .black: return ["East End", "Gotham Street", "Batman Street", "Jokers Street", "Hawkins Street", "Da Vinci Lane", "South Park", "Newton Bath Tub", "Einstein Lane", "Neo Lane"]
         }
     }
+    
+    static let allStations = Set(red.stations + green.stations + blue.stations + yellow.stations + black.stations).sorted { $0 < $1 }
+    
 }
 
 class MarsCityMetro: MetroMap {
