@@ -9,12 +9,13 @@
 public class StationNode {
     var index: Int!
     let name: String!
+    let line: String!
 
     var intersecting:[StationNode] = []
     
-    init(withName name: String, index: Int) {
+    init(withName name: String, line: String) {
         self.name = name
-        self.index = index
+        self.line = line
     }
     
     var next: StationNode?

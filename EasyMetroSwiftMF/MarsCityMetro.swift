@@ -47,19 +47,17 @@ class MarsCityMetro: MetroMap {
         var stations:[String] = []
         
         for metroLine in metroLines {
-            if let lineName = metroLine.name {
-                switch lineName {
-                case MarsCityMetroLine.red.name: stations = MarsCityMetroLine.red.stations
-                case MarsCityMetroLine.green.name: stations = MarsCityMetroLine.green.stations
-                case MarsCityMetroLine.blue.name: stations = MarsCityMetroLine.blue.stations
-                case MarsCityMetroLine.yellow.name: stations = MarsCityMetroLine.yellow.stations
-                case MarsCityMetroLine.black.name: stations = MarsCityMetroLine.black.stations
-                default: break
-                }
-                
-                for (index, station) in stations.enumerated() {
-                    metroLine.appendStation(withName: station, index: index)
-                }
+            switch metroLine.name {
+            case MarsCityMetroLine.red.name: stations = MarsCityMetroLine.red.stations
+            case MarsCityMetroLine.green.name: stations = MarsCityMetroLine.green.stations
+            case MarsCityMetroLine.blue.name: stations = MarsCityMetroLine.blue.stations
+            case MarsCityMetroLine.yellow.name: stations = MarsCityMetroLine.yellow.stations
+            case MarsCityMetroLine.black.name: stations = MarsCityMetroLine.black.stations
+            default: break
+            }
+            
+            for station in stations {
+                metroLine.appendStation(withName: station)
             }
         }
     }

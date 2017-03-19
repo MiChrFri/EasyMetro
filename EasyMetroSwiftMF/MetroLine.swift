@@ -12,7 +12,7 @@ public class MetroLine {
     private var lastStation: StationNode?
     
     //MARK: - Public Properties
-    public let name:String?
+    public let name:String
     public var stations:[String:StationNode] = [:]
     
     public var isEmpty: Bool {
@@ -33,8 +33,8 @@ public class MetroLine {
     }
     
     //MARK: - Public Functions
-    public func appendStation(withName name:String, index: Int) {
-        let station = StationNode(withName: name, index: index)
+    public func appendStation(withName name:String) {
+        let station = StationNode(withName: name, line: self.name)
         stations[name] = station
         
         if let lastNode = lastStation {
