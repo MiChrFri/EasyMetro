@@ -32,7 +32,7 @@ class MetroLineTests: XCTestCase {
             let testStationNames = ["station1", "station2", "station3"]
             
             for name in testStationNames {
-                testLine.appendStation(withName: name)
+                testLine.appendStation(withName: name, index: 0)
             }
 
             XCTAssertFalse(testLine.isEmpty)

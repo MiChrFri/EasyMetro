@@ -15,17 +15,34 @@ class RouteInputViewController: UIViewController {
         
         let metro = MarsCityMetro()
         
+        metro.findIntersections()
+        
         for line in metro.lines {
-            print("\(line.name) line ")
             
-            var currentNode = line.first
-            while currentNode != nil {
-                print("-> \(currentNode!.name)")
-                currentNode = currentNode!.next
+            if line.name == MarsCityMetroLine.yellow.name {
+                
+                for inters in (line.stations["Green Cross"]?.intersecting)! {
+                    print("\(inters.name) at \((inters.index))")
+                }
+                
+               
+                
             }
             
-            dump(line.stations)
+            
+//            print("\(line.name) line ")
+//            
+//            var currentNode = line.first
+//            while currentNode != nil {
+//                print("-> \(currentNode!.name)")
+//                currentNode = currentNode!.next
+//            }
+            
+//            dump(line.stations)
         }
+        
+        
+//        metro.lines.
     }
     
 }

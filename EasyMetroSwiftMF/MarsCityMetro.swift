@@ -57,8 +57,8 @@ class MarsCityMetro: MetroMap {
                 default: break
                 }
                 
-                for station in stations {
-                    metroLine.appendStation(withName: station)
+                for (index, station) in stations.enumerated() {
+                    metroLine.appendStation(withName: station, index: index)
                 }
             }
         }

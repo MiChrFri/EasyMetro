@@ -32,10 +32,9 @@ public class MetroLine {
         self.name = name
     }
     
-    
     //MARK: - Public Functions
-    public func appendStation(withName name:String) {
-        let station = StationNode(withName: name)
+    public func appendStation(withName name:String, index: Int) {
+        let station = StationNode(withName: name, index: index)
         stations[name] = station
         
         if let lastNode = lastStation {

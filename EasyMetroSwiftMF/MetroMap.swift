@@ -12,5 +12,21 @@ class MetroMap {
     init(withLines lines:[MetroLine]) {
         self.lines = lines
     }
+    
+
+    
+    public func findIntersections() {
+        for line in lines {
+            for key in line.stations.keys {
+                for l in lines {
+                    if l.name != line.name {
+                        if let intersectingStation = l.stations[key] {
+                            line.stations[key]?.intersecting.append(intersectingStation)
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 

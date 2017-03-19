@@ -7,11 +7,14 @@
 //
 
 public class StationNode {
-    
+    var index: Int!
     let name: String!
+
+    var intersecting:[StationNode] = []
     
-    init(withName name: String) {
+    init(withName name: String, index: Int) {
         self.name = name
+        self.index = index
     }
     
     var next: StationNode?

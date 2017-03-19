@@ -12,7 +12,6 @@
 		4C5226C41E7E8C48000BD65E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5226C21E7E8C48000BD65E /* LaunchScreen.storyboard */; };
 		4C5226CF1E7E8C48000BD65E /* EasyMetroSwiftMFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226CE1E7E8C48000BD65E /* EasyMetroSwiftMFTests.swift */; };
 		4C5226DC1E7E8F2F000BD65E /* RouteInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226DA1E7E8F2F000BD65E /* RouteInputViewController.swift */; };
-		4C5226DD1E7E8F2F000BD65E /* RouteInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226DA1E7E8F2F000BD65E /* RouteInputViewController.swift */; };
 		4C5226DE1E7E8F2F000BD65E /* RouteInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5226DB1E7E8F2F000BD65E /* RouteInputViewController.xib */; };
 		4C5226DF1E7E8F2F000BD65E /* RouteInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5226DB1E7E8F2F000BD65E /* RouteInputViewController.xib */; };
 		4C5226E21E7E9501000BD65E /* StationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226E11E7E9501000BD65E /* StationNode.swift */; };
@@ -23,6 +22,7 @@
 		4C5226EE1E7E9BE4000BD65E /* MetroLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226ED1E7E9BE4000BD65E /* MetroLineTests.swift */; };
 		4C5226F01E7EA9C6000BD65E /* MarsCityMetro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226EF1E7EA9C6000BD65E /* MarsCityMetro.swift */; };
 		4C5226F21E7EAFBF000BD65E /* MetroMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226F11E7EAFBF000BD65E /* MetroMap.swift */; };
+		4C5226F41E7ECDD7000BD65E /* MetroMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226F31E7ECDD7000BD65E /* MetroMapTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +52,7 @@
 		4C5226ED1E7E9BE4000BD65E /* MetroLineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroLineTests.swift; sourceTree = "<group>"; };
 		4C5226EF1E7EA9C6000BD65E /* MarsCityMetro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarsCityMetro.swift; sourceTree = "<group>"; };
 		4C5226F11E7EAFBF000BD65E /* MetroMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroMap.swift; sourceTree = "<group>"; };
+		4C5226F31E7ECDD7000BD65E /* MetroMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroMapTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +111,7 @@
 				4C5226D01E7E8C48000BD65E /* Info.plist */,
 				4C5226EA1E7E9891000BD65E /* StationNodeTests.swift */,
 				4C5226ED1E7E9BE4000BD65E /* MetroLineTests.swift */,
+				4C5226F31E7ECDD7000BD65E /* MetroMapTests.swift */,
 			);
 			path = EasyMetroSwiftMFTests;
 			sourceTree = "<group>";
@@ -257,8 +259,8 @@
 				4C5226CF1E7E8C48000BD65E /* EasyMetroSwiftMFTests.swift in Sources */,
 				4C5226E61E7E9684000BD65E /* MetroLine.swift in Sources */,
 				4C5226E31E7E9501000BD65E /* StationNode.swift in Sources */,
-				4C5226DD1E7E8F2F000BD65E /* RouteInputViewController.swift in Sources */,
 				4C5226EE1E7E9BE4000BD65E /* MetroLineTests.swift in Sources */,
+				4C5226F41E7ECDD7000BD65E /* MetroMapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
