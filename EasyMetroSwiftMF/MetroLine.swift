@@ -8,11 +8,12 @@
 
 
 public class MetroLine {
-    fileprivate var firstStation: StationNode?  // head
-    private var lastStation: StationNode?       // tail
+    private var firstStation: StationNode?
+    private var lastStation: StationNode?
     
     //MARK: - Public Properties
     public let name:String?
+    public var stations:[String:StationNode] = [:]
     
     public var isEmpty: Bool {
         return firstStation == nil
@@ -26,7 +27,6 @@ public class MetroLine {
         return lastStation
     }
     
-    
     //MARK: - Initilaizer
     init(withName name:String) {
         self.name = name
@@ -36,6 +36,7 @@ public class MetroLine {
     //MARK: - Public Functions
     public func appendStation(withName name:String) {
         let station = StationNode(withName: name)
+        stations[name] = station
         
         if let lastNode = lastStation {
             station.previous = lastNode

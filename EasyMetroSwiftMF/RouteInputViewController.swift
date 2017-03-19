@@ -12,5 +12,21 @@ class RouteInputViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let metro = MarsCityMetro()
+        
+        for line in metro.lines {
+            print("\(line.name) line ")
+            
+            var currentNode = line.first
+            while currentNode != nil {
+                print("-> \(currentNode!.name)")
+                currentNode = currentNode!.next
+            }
+            
+            dump(line.stations)
+        }
     }
+    
 }
+
