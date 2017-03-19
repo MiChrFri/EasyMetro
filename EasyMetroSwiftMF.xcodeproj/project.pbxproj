@@ -15,6 +15,12 @@
 		4C5226DD1E7E8F2F000BD65E /* RouteInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226DA1E7E8F2F000BD65E /* RouteInputViewController.swift */; };
 		4C5226DE1E7E8F2F000BD65E /* RouteInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5226DB1E7E8F2F000BD65E /* RouteInputViewController.xib */; };
 		4C5226DF1E7E8F2F000BD65E /* RouteInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5226DB1E7E8F2F000BD65E /* RouteInputViewController.xib */; };
+		4C5226E21E7E9501000BD65E /* StationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226E11E7E9501000BD65E /* StationNode.swift */; };
+		4C5226E31E7E9501000BD65E /* StationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226E11E7E9501000BD65E /* StationNode.swift */; };
+		4C5226E51E7E9684000BD65E /* MetroLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226E41E7E9684000BD65E /* MetroLine.swift */; };
+		4C5226E61E7E9684000BD65E /* MetroLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226E41E7E9684000BD65E /* MetroLine.swift */; };
+		4C5226EC1E7E9891000BD65E /* StationNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226EA1E7E9891000BD65E /* StationNodeTests.swift */; };
+		4C5226EE1E7E9BE4000BD65E /* MetroLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226ED1E7E9BE4000BD65E /* MetroLineTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,10 @@
 		4C5226D01E7E8C48000BD65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C5226DA1E7E8F2F000BD65E /* RouteInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouteInputViewController.swift; path = EasyMetroSwiftMF/RouteInputViewController.swift; sourceTree = "<group>"; };
 		4C5226DB1E7E8F2F000BD65E /* RouteInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RouteInputViewController.xib; path = EasyMetroSwiftMF/RouteInputViewController.xib; sourceTree = "<group>"; };
+		4C5226E11E7E9501000BD65E /* StationNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationNode.swift; sourceTree = "<group>"; };
+		4C5226E41E7E9684000BD65E /* MetroLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroLine.swift; sourceTree = "<group>"; };
+		4C5226EA1E7E9891000BD65E /* StationNodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationNodeTests.swift; sourceTree = "<group>"; };
+		4C5226ED1E7E9BE4000BD65E /* MetroLineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroLineTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				4C5226B81E7E8C48000BD65E /* EasyMetroSwiftMF */,
-				4C5226DA1E7E8F2F000BD65E /* RouteInputViewController.swift */,
-				4C5226DB1E7E8F2F000BD65E /* RouteInputViewController.xib */,
+				4C5226E01E7E93DC000BD65E /* ViewController */,
 				4C5226CD1E7E8C48000BD65E /* EasyMetroSwiftMFTests */,
 				4C5226B71E7E8C48000BD65E /* Products */,
 			);
@@ -82,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				4C5226D91E7E8D8F000BD65E /* supporting files */,
+				4C5226E11E7E9501000BD65E /* StationNode.swift */,
+				4C5226E41E7E9684000BD65E /* MetroLine.swift */,
 			);
 			path = EasyMetroSwiftMF;
 			sourceTree = "<group>";
@@ -91,6 +102,8 @@
 			children = (
 				4C5226CE1E7E8C48000BD65E /* EasyMetroSwiftMFTests.swift */,
 				4C5226D01E7E8C48000BD65E /* Info.plist */,
+				4C5226EA1E7E9891000BD65E /* StationNodeTests.swift */,
+				4C5226ED1E7E9BE4000BD65E /* MetroLineTests.swift */,
 			);
 			path = EasyMetroSwiftMFTests;
 			sourceTree = "<group>";
@@ -104,6 +117,15 @@
 				4C5226C51E7E8C48000BD65E /* Info.plist */,
 			);
 			name = "supporting files";
+			sourceTree = "<group>";
+		};
+		4C5226E01E7E93DC000BD65E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4C5226DA1E7E8F2F000BD65E /* RouteInputViewController.swift */,
+				4C5226DB1E7E8F2F000BD65E /* RouteInputViewController.xib */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +235,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C5226DC1E7E8F2F000BD65E /* RouteInputViewController.swift in Sources */,
+				4C5226E51E7E9684000BD65E /* MetroLine.swift in Sources */,
+				4C5226E21E7E9501000BD65E /* StationNode.swift in Sources */,
 				4C5226BA1E7E8C48000BD65E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,8 +245,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5226EC1E7E9891000BD65E /* StationNodeTests.swift in Sources */,
 				4C5226CF1E7E8C48000BD65E /* EasyMetroSwiftMFTests.swift in Sources */,
+				4C5226E61E7E9684000BD65E /* MetroLine.swift in Sources */,
+				4C5226E31E7E9501000BD65E /* StationNode.swift in Sources */,
 				4C5226DD1E7E8F2F000BD65E /* RouteInputViewController.swift in Sources */,
+				4C5226EE1E7E9BE4000BD65E /* MetroLineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
