@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C5226BA1E7E8C48000BD65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226B91E7E8C48000BD65E /* AppDelegate.swift */; };
+		4C5226C11E7E8C48000BD65E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5226C01E7E8C48000BD65E /* Assets.xcassets */; };
+		4C5226C41E7E8C48000BD65E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5226C21E7E8C48000BD65E /* LaunchScreen.storyboard */; };
+		4C5226CF1E7E8C48000BD65E /* EasyMetroSwiftMFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226CE1E7E8C48000BD65E /* EasyMetroSwiftMFTests.swift */; };
+		4C5226DC1E7E8F2F000BD65E /* RouteInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226DA1E7E8F2F000BD65E /* RouteInputViewController.swift */; };
+		4C5226DD1E7E8F2F000BD65E /* RouteInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226DA1E7E8F2F000BD65E /* RouteInputViewController.swift */; };
+		4C5226DE1E7E8F2F000BD65E /* RouteInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5226DB1E7E8F2F000BD65E /* RouteInputViewController.xib */; };
+		4C5226DF1E7E8F2F000BD65E /* RouteInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5226DB1E7E8F2F000BD65E /* RouteInputViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C5226CB1E7E8C48000BD65E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C5226AE1E7E8C47000BD65E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C5226B51E7E8C47000BD65E;
+			remoteInfo = EasyMetroSwiftMF;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C5226B61E7E8C48000BD65E /* EasyMetroSwiftMF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMetroSwiftMF.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5226B91E7E8C48000BD65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C5226C01E7E8C48000BD65E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C5226C31E7E8C48000BD65E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C5226C51E7E8C48000BD65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C5226CA1E7E8C48000BD65E /* EasyMetroSwiftMFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMetroSwiftMFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5226CE1E7E8C48000BD65E /* EasyMetroSwiftMFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyMetroSwiftMFTests.swift; sourceTree = "<group>"; };
+		4C5226D01E7E8C48000BD65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C5226DA1E7E8F2F000BD65E /* RouteInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouteInputViewController.swift; path = EasyMetroSwiftMF/RouteInputViewController.swift; sourceTree = "<group>"; };
+		4C5226DB1E7E8F2F000BD65E /* RouteInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RouteInputViewController.xib; path = EasyMetroSwiftMF/RouteInputViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C5226B31E7E8C47000BD65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5226C71E7E8C48000BD65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C5226AD1E7E8C47000BD65E = {
+			isa = PBXGroup;
+			children = (
+				4C5226B81E7E8C48000BD65E /* EasyMetroSwiftMF */,
+				4C5226DA1E7E8F2F000BD65E /* RouteInputViewController.swift */,
+				4C5226DB1E7E8F2F000BD65E /* RouteInputViewController.xib */,
+				4C5226CD1E7E8C48000BD65E /* EasyMetroSwiftMFTests */,
+				4C5226B71E7E8C48000BD65E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C5226B71E7E8C48000BD65E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C5226B61E7E8C48000BD65E /* EasyMetroSwiftMF.app */,
+				4C5226CA1E7E8C48000BD65E /* EasyMetroSwiftMFTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C5226B81E7E8C48000BD65E /* EasyMetroSwiftMF */ = {
+			isa = PBXGroup;
+			children = (
+				4C5226D91E7E8D8F000BD65E /* supporting files */,
+			);
+			path = EasyMetroSwiftMF;
+			sourceTree = "<group>";
+		};
+		4C5226CD1E7E8C48000BD65E /* EasyMetroSwiftMFTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C5226CE1E7E8C48000BD65E /* EasyMetroSwiftMFTests.swift */,
+				4C5226D01E7E8C48000BD65E /* Info.plist */,
+			);
+			path = EasyMetroSwiftMFTests;
+			sourceTree = "<group>";
+		};
+		4C5226D91E7E8D8F000BD65E /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				4C5226B91E7E8C48000BD65E /* AppDelegate.swift */,
+				4C5226C01E7E8C48000BD65E /* Assets.xcassets */,
+				4C5226C21E7E8C48000BD65E /* LaunchScreen.storyboard */,
+				4C5226C51E7E8C48000BD65E /* Info.plist */,
+			);
+			name = "supporting files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C5226B51E7E8C47000BD65E /* EasyMetroSwiftMF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5226D31E7E8C48000BD65E /* Build configuration list for PBXNativeTarget "EasyMetroSwiftMF" */;
+			buildPhases = (
+				4C5226B21E7E8C47000BD65E /* Sources */,
+				4C5226B31E7E8C47000BD65E /* Frameworks */,
+				4C5226B41E7E8C47000BD65E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyMetroSwiftMF;
+			productName = EasyMetroSwiftMF;
+			productReference = 4C5226B61E7E8C48000BD65E /* EasyMetroSwiftMF.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C5226C91E7E8C48000BD65E /* EasyMetroSwiftMFTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5226D61E7E8C48000BD65E /* Build configuration list for PBXNativeTarget "EasyMetroSwiftMFTests" */;
+			buildPhases = (
+				4C5226C61E7E8C48000BD65E /* Sources */,
+				4C5226C71E7E8C48000BD65E /* Frameworks */,
+				4C5226C81E7E8C48000BD65E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C5226CC1E7E8C48000BD65E /* PBXTargetDependency */,
+			);
+			name = EasyMetroSwiftMFTests;
+			productName = EasyMetroSwiftMFTests;
+			productReference = 4C5226CA1E7E8C48000BD65E /* EasyMetroSwiftMFTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C5226AE1E7E8C47000BD65E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = frickm;
+				TargetAttributes = {
+					4C5226B51E7E8C47000BD65E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9R94XJAZ89;
+						ProvisioningStyle = Automatic;
+					};
+					4C5226C91E7E8C48000BD65E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9R94XJAZ89;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4C5226B51E7E8C47000BD65E;
+					};
+				};
+			};
+			buildConfigurationList = 4C5226B11E7E8C47000BD65E /* Build configuration list for PBXProject "EasyMetroSwiftMF" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C5226AD1E7E8C47000BD65E;
+			productRefGroup = 4C5226B71E7E8C48000BD65E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C5226B51E7E8C47000BD65E /* EasyMetroSwiftMF */,
+				4C5226C91E7E8C48000BD65E /* EasyMetroSwiftMFTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C5226B41E7E8C47000BD65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5226DE1E7E8F2F000BD65E /* RouteInputViewController.xib in Resources */,
+				4C5226C41E7E8C48000BD65E /* LaunchScreen.storyboard in Resources */,
+				4C5226C11E7E8C48000BD65E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5226C81E7E8C48000BD65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5226DF1E7E8F2F000BD65E /* RouteInputViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C5226B21E7E8C47000BD65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5226DC1E7E8F2F000BD65E /* RouteInputViewController.swift in Sources */,
+				4C5226BA1E7E8C48000BD65E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5226C61E7E8C48000BD65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5226CF1E7E8C48000BD65E /* EasyMetroSwiftMFTests.swift in Sources */,
+				4C5226DD1E7E8F2F000BD65E /* RouteInputViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C5226CC1E7E8C48000BD65E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C5226B51E7E8C47000BD65E /* EasyMetroSwiftMF */;
+			targetProxy = 4C5226CB1E7E8C48000BD65E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C5226C21E7E8C48000BD65E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5226C31E7E8C48000BD65E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C5226D11E7E8C48000BD65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C5226D21E7E8C48000BD65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C5226D41E7E8C48000BD65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9R94XJAZ89;
+				INFOPLIST_FILE = EasyMetroSwiftMF/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FRY.EasyMetroSwiftMF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4C5226D51E7E8C48000BD65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9R94XJAZ89;
+				INFOPLIST_FILE = EasyMetroSwiftMF/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FRY.EasyMetroSwiftMF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4C5226D71E7E8C48000BD65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9R94XJAZ89;
+				INFOPLIST_FILE = EasyMetroSwiftMFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FRY.EasyMetroSwiftMFTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyMetroSwiftMF.app/EasyMetroSwiftMF";
+			};
+			name = Debug;
+		};
+		4C5226D81E7E8C48000BD65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9R94XJAZ89;
+				INFOPLIST_FILE = EasyMetroSwiftMFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FRY.EasyMetroSwiftMFTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyMetroSwiftMF.app/EasyMetroSwiftMF";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C5226B11E7E8C47000BD65E /* Build configuration list for PBXProject "EasyMetroSwiftMF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5226D11E7E8C48000BD65E /* Debug */,
+				4C5226D21E7E8C48000BD65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C5226D31E7E8C48000BD65E /* Build configuration list for PBXNativeTarget "EasyMetroSwiftMF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5226D41E7E8C48000BD65E /* Debug */,
+				4C5226D51E7E8C48000BD65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4C5226D61E7E8C48000BD65E /* Build configuration list for PBXNativeTarget "EasyMetroSwiftMFTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5226D71E7E8C48000BD65E /* Debug */,
+				4C5226D81E7E8C48000BD65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C5226AE1E7E8C47000BD65E /* Project object */;
+}
