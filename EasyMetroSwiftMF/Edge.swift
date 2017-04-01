@@ -6,9 +6,9 @@
 //  Copyright © 2017 frickm. All rights reserved.
 //
 
-public struct Edge<T> {
-    let from: Vertex<T>
-    let to: Vertex<T>
-    
-    public let weight: Float?
+public struct Edge {
+    var from: Station
+    var to: Station
+    var line: MarsCityMetroLine
+    let distanceInMinutes: Int
 }
