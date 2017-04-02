@@ -30,6 +30,9 @@ enum MarsCityMetroLine: String {
     }
     
     static let allStations = Set(red.stations + green.stations + blue.stations + yellow.stations + black.stations).sorted { $0 < $1 }
+    static let timePerStation = 5
+    static let pricePerStation = 1
+    static let priceForStationChange = 1
 }
 
 class MarsCityMetro {

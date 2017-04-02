@@ -26,14 +26,24 @@ class RouteInputViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        metro.findIntersections()
-        
         departurePicker.delegate = self
         destinationPicker.delegate = self
     }
     
     @IBAction func searchButtonTapped(_ sender: UIButton) {
-        routeFinder.findRoute(departure: departureLabel.text, destination: destinationLabel.text, metro: metro)
+        guard let from = departureLabel.text, let to = destinationLabel.text else { return }
+        
+        if var fromStation = metro.metroGraph.stations[from], let toStation = metro.metroGraph.stations[to] {
+            let shortestPath = routeFinder.breadthFirstSearch(metroGraph: metro.metroGraph, station: &fromStation, destination: toStation)
+            
+            let ticketFormatter = TicketFormatter()
+            if let ticketData = ticketFormatter.getTicketData(stations: shortestPath) {
+                print("\(ticketData.fromTo[0]) ⟶ \(ticketData.fromTo[1])")
+                print("Costs: \(ticketData.ticketPrice)$ ")
+                print("Duration: \(ticketData.travelTime) min ")
+                print(ticketData.directions)
+            }
+        }
     }
 }
 
