@@ -10,36 +10,28 @@ import XCTest
 @testable import EasyMetroSwiftMF
 
 class RouteFinderTests: XCTestCase {
-    
     let metro = MarsCityMetro()
     let routeFinder = RouteFinder()
     
-    
-
-    
-    func testgetLinesOfStation() {
-        let test1 = "Batman Street"
-        let test1Return = routeFinder.getLinesOfStation(test1, lines: metro.lines)
-        
-        for station in test1Return {
-            XCTAssertEqual(station.name, "Black")
+    func testFindRoute() {
+        if var fromStation = metro.metroGraph.stations["Peter Park"], let toStation = metro.metroGraph.stations["Foot Stand"] {
+            let shortestPath = routeFinder.breadthFirstSearch(metroGraph: metro.metroGraph, station: &fromStation, destination: toStation)
+            
+            XCTAssertEqual(shortestPath[0].name, "Peter Park")
+            XCTAssertEqual(shortestPath[1].name, "City Centre")
+            XCTAssertEqual(shortestPath[2].name, "Football Stadium")
+            XCTAssertEqual(shortestPath[3].name, "Foot Stand")
         }
         
-        let test2 = "Boxing Avenue"
-        let test2Return = routeFinder.getLinesOfStation(test2, lines: metro.lines)
-        
-        XCTAssertEqual(test2Return[0].name, "Red")
+        if var fromStation = metro.metroGraph.stations["South Park"], let toStation = metro.metroGraph.stations["Silk Board"] {
+            let shortestPath = routeFinder.breadthFirstSearch(metroGraph: metro.metroGraph, station: &fromStation, destination: toStation)
+            
+            XCTAssertEqual(shortestPath[0].name, "South Park")
+            XCTAssertEqual(shortestPath[1].name, "South Pole")
+            XCTAssertEqual(shortestPath[2].name, "Green Cross")
+            XCTAssertEqual(shortestPath[3].name, "Orange Street")
+            XCTAssertEqual(shortestPath[4].name, "Silk Board")
+        }
     }
-    
-    func testFindRoute() {
-        let result = routeFinder.findRoute(departure: "Peter Park", destination: "Foot Stand", metro: metro)
-        
-        XCTAssertEqual(result, " - Peter Park - City Centre - Football Stadium - Foot Stand")
-        
-        
-        let result2 = routeFinder.findRoute(departure: "Peter Park", destination: "Foot Stand", metro: metro)
-        XCTAssertEqual(result, " - Peter Park - City Centre - Football Stadium - Foot Stand")
-    }
-    
     
 }

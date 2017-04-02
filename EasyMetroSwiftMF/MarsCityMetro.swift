@@ -30,39 +30,43 @@ enum MarsCityMetroLine: String {
     }
     
     static let allStations = Set(red.stations + green.stations + blue.stations + yellow.stations + black.stations).sorted { $0 < $1 }
-    
 }
 
-class MarsCityMetro: MetroMap {
+class MarsCityMetro {
     private let lineNames = ["Red", "Green", "Blue", "Yellow", "Black"]
-    private var metroLines:[MetroLine] = []
+    let metroGraph = MetroGraph()
     
     init() {
-        for lineName in MarsCityMetroLine.names {
-            self.metroLines.append(MetroLine(withName: lineName))
-        }
-        
-        super.init(withLines: metroLines)
-        setupStations()
+        setupMetroMap()
     }
     
-    fileprivate func setupStations() {
-        var stations:[String] = []
+    func setupMetroMap() {
+        setupStations(metroGraph: metroGraph)
         
-        for metroLine in metroLines {
-            switch metroLine.name {
-            case MarsCityMetroLine.red.name: stations = MarsCityMetroLine.red.stations
-            case MarsCityMetroLine.green.name: stations = MarsCityMetroLine.green.stations
-            case MarsCityMetroLine.blue.name: stations = MarsCityMetroLine.blue.stations
-            case MarsCityMetroLine.yellow.name: stations = MarsCityMetroLine.yellow.stations
-            case MarsCityMetroLine.black.name: stations = MarsCityMetroLine.black.stations
-            default: break
-            }
+        addEdgesForStations(metroGraph: metroGraph, line: .black)
+        addEdgesForStations(metroGraph: metroGraph, line: .blue)
+        addEdgesForStations(metroGraph: metroGraph, line: .green)
+        addEdgesForStations(metroGraph: metroGraph, line: .red)
+        addEdgesForStations(metroGraph: metroGraph, line: .yellow)
+    }
+
+    private func setupStations(metroGraph: MetroGraph) {
+        MarsCityMetroLine.allStations.forEach {
+            metroGraph.addStation(withName: $0)
+        }
+    }
+    
+    private func addEdgesForStations(metroGraph: MetroGraph, line: MarsCityMetroLine) {
+        let stationNames = line.stations
+        
+        for index in 0..<stationNames.count - 1 {
+            let stationNameA = stationNames[index]
+            let stationNameB = stationNames[index + 1]
             
-            for station in stations {
-                metroLine.appendStation(withName: station)
-            }
+            guard let stationA = metroGraph.stations[stationNameA], let stationB = metroGraph.stations[stationNameB] else { return }
+            metroGraph.addEdge(stationA, to: stationB, line: line)
         }
     }
-    
+
 }
+

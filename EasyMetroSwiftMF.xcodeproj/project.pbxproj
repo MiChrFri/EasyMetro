@@ -14,18 +14,12 @@
 		4C5226DC1E7E8F2F000BD65E /* RouteInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226DA1E7E8F2F000BD65E /* RouteInputViewController.swift */; };
 		4C5226DE1E7E8F2F000BD65E /* RouteInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5226DB1E7E8F2F000BD65E /* RouteInputViewController.xib */; };
 		4C5226DF1E7E8F2F000BD65E /* RouteInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5226DB1E7E8F2F000BD65E /* RouteInputViewController.xib */; };
-		4C5226E21E7E9501000BD65E /* StationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226E11E7E9501000BD65E /* StationNode.swift */; };
-		4C5226E31E7E9501000BD65E /* StationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226E11E7E9501000BD65E /* StationNode.swift */; };
-		4C5226E51E7E9684000BD65E /* MetroLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226E41E7E9684000BD65E /* MetroLine.swift */; };
-		4C5226E61E7E9684000BD65E /* MetroLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226E41E7E9684000BD65E /* MetroLine.swift */; };
-		4C5226EC1E7E9891000BD65E /* StationNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226EA1E7E9891000BD65E /* StationNodeTests.swift */; };
-		4C5226EE1E7E9BE4000BD65E /* MetroLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226ED1E7E9BE4000BD65E /* MetroLineTests.swift */; };
 		4C5226F01E7EA9C6000BD65E /* MarsCityMetro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226EF1E7EA9C6000BD65E /* MarsCityMetro.swift */; };
-		4C5226F21E7EAFBF000BD65E /* MetroMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226F11E7EAFBF000BD65E /* MetroMap.swift */; };
-		4C5226F41E7ECDD7000BD65E /* MetroMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5226F31E7ECDD7000BD65E /* MetroMapTests.swift */; };
+		4CBAD3261E90419E00044877 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBAD3251E90419E00044877 /* Queue.swift */; };
 		4CCFFC921E8FED0F004422E6 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCFFC911E8FED0F004422E6 /* Edge.swift */; };
-		4CCFFC951E8FED38004422E6 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCFFC941E8FED38004422E6 /* Vertex.swift */; };
-		4CCFFC971E8FF063004422E6 /* UndirectedGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCFFC961E8FF062004422E6 /* UndirectedGraph.swift */; };
+		4CCFFC971E8FF063004422E6 /* MetroGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCFFC961E8FF062004422E6 /* MetroGraph.swift */; };
+		4CCFFC991E8FF72A004422E6 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCFFC981E8FF72A004422E6 /* Station.swift */; };
+		4CCFFC9B1E8FFBD0004422E6 /* MetroGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCFFC9A1E8FFBD0004422E6 /* MetroGraphTests.swift */; };
 		4CDBEDA71E7EDF9C008EE741 /* RouteFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBEDA61E7EDF9C008EE741 /* RouteFinder.swift */; };
 		4CDBEDAB1E7EE0DB008EE741 /* RouteFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBEDAA1E7EE0DB008EE741 /* RouteFinderTests.swift */; };
 /* End PBXBuildFile section */
@@ -51,16 +45,12 @@
 		4C5226D01E7E8C48000BD65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C5226DA1E7E8F2F000BD65E /* RouteInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouteInputViewController.swift; path = EasyMetroSwiftMF/RouteInputViewController.swift; sourceTree = "<group>"; };
 		4C5226DB1E7E8F2F000BD65E /* RouteInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RouteInputViewController.xib; path = EasyMetroSwiftMF/RouteInputViewController.xib; sourceTree = "<group>"; };
-		4C5226E11E7E9501000BD65E /* StationNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationNode.swift; sourceTree = "<group>"; };
-		4C5226E41E7E9684000BD65E /* MetroLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroLine.swift; sourceTree = "<group>"; };
-		4C5226EA1E7E9891000BD65E /* StationNodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationNodeTests.swift; sourceTree = "<group>"; };
-		4C5226ED1E7E9BE4000BD65E /* MetroLineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroLineTests.swift; sourceTree = "<group>"; };
 		4C5226EF1E7EA9C6000BD65E /* MarsCityMetro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarsCityMetro.swift; sourceTree = "<group>"; };
-		4C5226F11E7EAFBF000BD65E /* MetroMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroMap.swift; sourceTree = "<group>"; };
-		4C5226F31E7ECDD7000BD65E /* MetroMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroMapTests.swift; sourceTree = "<group>"; };
+		4CBAD3251E90419E00044877 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		4CCFFC911E8FED0F004422E6 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
-		4CCFFC941E8FED38004422E6 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
-		4CCFFC961E8FF062004422E6 /* UndirectedGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UndirectedGraph.swift; sourceTree = "<group>"; };
+		4CCFFC961E8FF062004422E6 /* MetroGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroGraph.swift; sourceTree = "<group>"; };
+		4CCFFC981E8FF72A004422E6 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		4CCFFC9A1E8FFBD0004422E6 /* MetroGraphTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroGraphTests.swift; sourceTree = "<group>"; };
 		4CDBEDA61E7EDF9C008EE741 /* RouteFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteFinder.swift; sourceTree = "<group>"; };
 		4CDBEDAA1E7EE0DB008EE741 /* RouteFinderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteFinderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,12 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				4C5226D91E7E8D8F000BD65E /* supporting files */,
-				4C5226E11E7E9501000BD65E /* StationNode.swift */,
 				4CCFFC901E8FECF8004422E6 /* Graph */,
 				4CDBEDA61E7EDF9C008EE741 /* RouteFinder.swift */,
 				4C5226EF1E7EA9C6000BD65E /* MarsCityMetro.swift */,
-				4C5226F11E7EAFBF000BD65E /* MetroMap.swift */,
-				4C5226E41E7E9684000BD65E /* MetroLine.swift */,
 			);
 			path = EasyMetroSwiftMF;
 			sourceTree = "<group>";
@@ -121,9 +108,7 @@
 			children = (
 				4C5226CE1E7E8C48000BD65E /* EasyMetroSwiftMFTests.swift */,
 				4C5226D01E7E8C48000BD65E /* Info.plist */,
-				4C5226EA1E7E9891000BD65E /* StationNodeTests.swift */,
-				4C5226ED1E7E9BE4000BD65E /* MetroLineTests.swift */,
-				4C5226F31E7ECDD7000BD65E /* MetroMapTests.swift */,
+				4CCFFC9A1E8FFBD0004422E6 /* MetroGraphTests.swift */,
 				4CDBEDAA1E7EE0DB008EE741 /* RouteFinderTests.swift */,
 			);
 			path = EasyMetroSwiftMFTests;
@@ -136,6 +121,7 @@
 				4C5226C01E7E8C48000BD65E /* Assets.xcassets */,
 				4C5226C21E7E8C48000BD65E /* LaunchScreen.storyboard */,
 				4C5226C51E7E8C48000BD65E /* Info.plist */,
+				4CBAD3251E90419E00044877 /* Queue.swift */,
 			);
 			name = "supporting files";
 			sourceTree = "<group>";
@@ -153,8 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				4CCFFC911E8FED0F004422E6 /* Edge.swift */,
-				4CCFFC941E8FED38004422E6 /* Vertex.swift */,
-				4CCFFC961E8FF062004422E6 /* UndirectedGraph.swift */,
+				4CCFFC981E8FF72A004422E6 /* Station.swift */,
+				4CCFFC961E8FF062004422E6 /* MetroGraph.swift */,
 			);
 			name = Graph;
 			sourceTree = "<group>";
@@ -266,14 +252,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C5226DC1E7E8F2F000BD65E /* RouteInputViewController.swift in Sources */,
-				4C5226E51E7E9684000BD65E /* MetroLine.swift in Sources */,
-				4CCFFC951E8FED38004422E6 /* Vertex.swift in Sources */,
-				4CCFFC971E8FF063004422E6 /* UndirectedGraph.swift in Sources */,
+				4CCFFC971E8FF063004422E6 /* MetroGraph.swift in Sources */,
+				4CBAD3261E90419E00044877 /* Queue.swift in Sources */,
 				4CCFFC921E8FED0F004422E6 /* Edge.swift in Sources */,
 				4CDBEDA71E7EDF9C008EE741 /* RouteFinder.swift in Sources */,
-				4C5226E21E7E9501000BD65E /* StationNode.swift in Sources */,
 				4C5226BA1E7E8C48000BD65E /* AppDelegate.swift in Sources */,
-				4C5226F21E7EAFBF000BD65E /* MetroMap.swift in Sources */,
+				4CCFFC991E8FF72A004422E6 /* Station.swift in Sources */,
 				4C5226F01E7EA9C6000BD65E /* MarsCityMetro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,13 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C5226EC1E7E9891000BD65E /* StationNodeTests.swift in Sources */,
 				4C5226CF1E7E8C48000BD65E /* EasyMetroSwiftMFTests.swift in Sources */,
-				4C5226E61E7E9684000BD65E /* MetroLine.swift in Sources */,
-				4C5226E31E7E9501000BD65E /* StationNode.swift in Sources */,
-				4C5226EE1E7E9BE4000BD65E /* MetroLineTests.swift in Sources */,
+				4CCFFC9B1E8FFBD0004422E6 /* MetroGraphTests.swift in Sources */,
 				4CDBEDAB1E7EE0DB008EE741 /* RouteFinderTests.swift in Sources */,
-				4C5226F41E7ECDD7000BD65E /* MetroMapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
