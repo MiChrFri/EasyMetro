@@ -26,7 +26,7 @@ class TicketFormatterTests: XCTestCase {
         XCTAssertEqual(ticketData?.fromTo[1], "Cypher Lane")        
         XCTAssertEqual(ticketData?.ticketPrice, 4)
         XCTAssertEqual(ticketData?.travelTime, 15)
-        XCTAssertEqual(ticketData?.directions, "Take the Red Line at Oracle Lane towards Boxing Avenue\n⥅ Switch to the Blue Line at Boxing Avenue and get off at your destination - Cypher Lane")
+        XCTAssertEqual(ticketData?.directions, "Take the Red Line at Oracle Lane towards Boxing Avenue.\nSwitch to the Blue Line at Boxing Avenue and get off at your destination - Cypher Lane.")
     }
     
 }

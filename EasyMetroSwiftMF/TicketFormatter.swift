@@ -16,6 +16,7 @@ struct TicketFormatter {
         for (i, node) in stations.enumerated() {
             if i < stations.count - 1 {
                 guard let edge = node.neighbors.filter({ $0.to == stations[i + 1] }).first else { return nil }
+                
                 var routeStation = RouteStation(name: node.name, currentLine: edge.line)
                 
                 if lastLine != nil {
@@ -63,13 +64,13 @@ struct TicketFormatter {
             
             for station in 1..<route.count {
                 if route[station].switchedFrom != nil {
-                    directions += "towards \(route[station].name)\n"
-                    directions += "⥅ Switch to the \(route[station].currentLine.name) Line at \(route[station].name) "
+                    directions += "towards \(route[station].name).\n"
+                    directions += "Switch to the \(route[station].currentLine.name) Line at \(route[station].name) "
                 }
             }
             
             guard let destination = route.last else { return errorText }
-            directions += "and get off at your destination - \(destination.name)"
+            directions += "and get off at your destination - \(destination.name)."
             
             return directions
         }
