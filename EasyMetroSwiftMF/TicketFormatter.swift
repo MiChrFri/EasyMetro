@@ -7,7 +7,6 @@
 //
 
 struct TicketFormatter {
-    
     func getTicketData(stations: [Station]) -> metroTicketData? {
         var lineChanges = 0
         var lastLine: MarsCityMetroLine?
@@ -76,7 +75,6 @@ struct TicketFormatter {
         }
         return errorText
     }
-
 }
 
 struct RouteStation {
